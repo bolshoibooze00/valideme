@@ -28,7 +28,7 @@ $("#public-input").on('keyup paste', function(e) {
 		if (validaCpfCnpj(predicted)) {
 			
 			$.when( 		$.ajax({
-				url: 'https://app.valide.me/public-api/cpf' + predicted,
+				url: 'https://app.valide.me/public-api/cpf' + predicted, 
 				type: "get",
 				dataType: "text",
 				success: function(response) {
